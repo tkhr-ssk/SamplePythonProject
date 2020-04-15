@@ -9,7 +9,7 @@ Todo:
     * xxx をしないと使用できない
 """
 
-from liba import liba_print
+from liba import liba_print, liba_sum
 
 
 def add_func(a: int, b: int):
@@ -29,6 +29,12 @@ def add_func(a: int, b: int):
         二つの値の和
     """
     return a+b
+
+
+def call_lib_add_func(a: int, b: int):
+    if a == b:
+        print("same")
+    return liba_sum(a, b)
 
 
 def main():
